@@ -24,6 +24,18 @@ envoy_cc_library(
         "@re2//:re2",
         "@icu//:icu",
         "@libpng//:libpng",
-        "@libwebp//:libwebp"
+        "@libwebp//:libwebp",
+        "@google_sparsehash//:google_sparsehash",
+        "@protobuf//:protobuf_lite",
+        "@protobuf//:protobuf_full_do_not_use",
+        "@protobuf//:protobuf_message_differencer",
+        "@giflib//:giflib_core",
+        "@giflib//:dgiflib",
+        "@giflib//:egiflib",
+        "@optipng//:opngreduc",
+        "@grpc//:grpc++",        # grpc++ target corresponds to grpc_cpp target of gyp
+        "@grpc//:grpc",          # grpc target corresponds to grpc_core target of gyp
+        "@grpc//:gpr",
+        "@grpc//:grpc_cpp_plugin",
     ],
 )
